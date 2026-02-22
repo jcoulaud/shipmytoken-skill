@@ -86,7 +86,7 @@ All notable changes to Ship My Token will be documented in this file.
 
 ### Added
 - Token launch on Pumpfun via chat (name, symbol, image, optional metadata)
-- Automatic fee sharing: 90% creator / 10% Ship My Token
+- Automatic fee sharing: 80% creator / 20% Ship My Token
 - Fee claiming for accumulated creator trading fees
 - Fee sharing updates with custom splits (up to 10 shareholders)
 - Portfolio view with token status, price, and bonding curve progress
