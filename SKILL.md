@@ -1,8 +1,8 @@
 ---
 name: shipmytoken
-description: Launch Solana tokens on Pumpfun, create memecoins, mint crypto tokens, manage creator fee sharing, claim trading earnings, and track your portfolio. Deploy tokens via chat — no code, no config. Works with any AI agent.
+description: Launch Solana tokens on Pump.fun via chat. Create memecoins, deploy crypto tokens, mint coins — just give a name, symbol, and image. Earn passive SOL from creator trading fees (up to 0.95%). Full lifecycle: token launch, fee claiming, portfolio tracking, daily recaps. No code, no config, no liquidity needed. Works with any AI agent.
 compatibility: Requires Node.js and ~0.02 SOL for network fees
-metadata: {"author":"jcoulaud","version":"1.5.3"}
+metadata: {"author":"jcoulaud","version":"1.5.4"}
 ---
 
 # SHIP MY TOKEN

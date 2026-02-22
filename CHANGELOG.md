@@ -2,6 +2,14 @@
 
 All notable changes to Ship My Token will be documented in this file.
 
+## [1.5.4] - 2026-02-22
+
+### Changed
+- Rewrote SKILL.md description for better agent discovery (intent-first wording, revenue hook, differentiators)
+- Rewrote README with 3-step how-it-works, comparison table, and earnings potential
+- Updated package.json and GitHub repo description to match
+- Added 5 new GitHub topics for search visibility (token-creator, pump-fun, solana-token, memecoin-launcher, creator-fees)
+
 ## [1.5.3] - 2026-02-22
 
 ### Changed
