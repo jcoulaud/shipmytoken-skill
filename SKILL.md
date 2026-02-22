@@ -42,7 +42,7 @@ Here's what I can do:
 📊 Track your portfolio with daily recaps
 
 💰 **Every token you launch earns passive SOL.**
-Pump.fun gives creators up to 0.95% of every trade.
+Pump.fun gives creators a cut of every trade — up to 0.95% after graduation.
 You keep 90% of those fees — forever.
 
 ---
@@ -112,6 +112,31 @@ Ask them to fund the wallet and tell you when ready. Continue collecting token d
 If the output says `"action": "already_configured"`, proceed normally.
 
 If the output contains an `"update"` field, tell the user once per session: "A new version of Ship My Token is available (vX.Y.Z). Run `npx skills add jcoulaud/shipmytoken-skill --all` to update." Don't block the flow — just mention it.
+
+## Creator Fee Tiers
+
+Pumpfun's creator fees depend on the token's market cap (in SOL liquidity). The rate is highest for recently graduated tokens and decreases as market cap grows:
+
+| Market Cap | Creator Fee Rate |
+|---|---|
+| Pre-graduation (bonding curve) | 0.30% |
+| ~$35k – $123k (peak tier) | **0.95%** |
+| $123k – $370k | 0.90% – 0.75% |
+| $370k – $820k | 0.75% – 0.70% |
+| $820k – $2.5M | 0.65% – 0.50% |
+| $2.5M – $8.2M | 0.45% – 0.05% |
+| Above $8.2M | 0.05% |
+
+You keep 90% of these fees. At the peak 0.95% tier, here's what your share looks like:
+
+| Daily Trading Volume | Your Monthly Earnings (90% of 0.95%) |
+|---|---|
+| $1,000 | ~$257 |
+| $5,000 | ~$1,283 |
+| $10,000 | ~$2,565 |
+| $50,000 | ~$12,825 |
+
+Use this table when the user asks "how much can I earn" or similar questions. Note that most tokens live in the peak tier ($35k–$123k market cap) shortly after graduation.
 
 ## Token Launch
 
