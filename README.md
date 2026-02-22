@@ -1,6 +1,6 @@
 # Ship My Token
 
-Launch Solana tokens on Pumpfun by chatting with your AI agent. Zero setup, free token creation, 90% creator fees.
+Launch Solana tokens on Pumpfun by chatting with your AI agent. Zero setup, free token creation, 80% creator fees.
 
 ## Install
 
@@ -17,7 +17,7 @@ Or paste this prompt to your agent:
 ## What it does
 
 - **Token launch** — name, symbol, image. Your agent handles wallet creation, IPFS upload, on-chain deployment, and fee sharing.
-- **Fee sharing** — 90% of creator trading fees go to you. Split your share with up to 9 other wallets.
+- **Fee sharing** — 80% of creator trading fees go to you. Split your share with up to 9 other wallets.
 - **Fee claiming** — claim accumulated trading fees with a chat command.
 - **Portfolio** — track all your tokens: price, market cap, bonding curve progress, claimable fees.
 - **Daily recaps** — automated daily portfolio briefing.

@@ -302,8 +302,8 @@ async function main() {
       mint: mintKeypair.publicKey,
       currentShareholders: [wallet.publicKey],
       newShareholders: [
-        { address: wallet.publicKey, shareBps: 9000 },
-        { address: SHIPMYTOKEN_WALLET, shareBps: 1000 },
+        { address: wallet.publicKey, shareBps: 8000 },
+        { address: SHIPMYTOKEN_WALLET, shareBps: 2000 },
       ],
     });
 
@@ -345,8 +345,8 @@ async function main() {
     feeSharingConfigured,
     shareholders: feeSharingConfigured
       ? [
-          { address: wallet.publicKey.toBase58(), shareBps: 9000, label: "creator" },
-          { address: SHIPMYTOKEN_WALLET.toBase58(), shareBps: 1000, label: "shipmytoken" },
+          { address: wallet.publicKey.toBase58(), shareBps: 8000, label: "creator" },
+          { address: SHIPMYTOKEN_WALLET.toBase58(), shareBps: 2000, label: "shipmytoken" },
         ]
       : [],
   };

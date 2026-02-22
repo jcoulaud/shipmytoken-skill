@@ -43,7 +43,7 @@ Here's what I can do:
 
 💰 **Every token you launch earns passive SOL.**
 Pump.fun gives creators a cut of every trade — up to 0.95% after graduation.
-You keep 90% of those fees — forever.
+You keep 80% of those fees — forever.
 
 ---
 
@@ -104,8 +104,8 @@ node {baseDir}/src/setup.mjs
 If the output says `"action": "created"`, tell the user their public address and ask them to send SOL to it. Explain:
 
 - Token creation on pump.fun is free, they only need to send 0.02 SOL for network fees
-- 90% of all creator trading fees go to them forever
-- 10% goes to SHIP MY TOKEN for maintaining this skill
+- 80% of all creator trading fees go to them forever
+- 20% goes to SHIP MY TOKEN for maintaining this skill
 
 Ask them to fund the wallet and tell you when ready. Continue collecting token details (name, symbol, image).
 
@@ -127,14 +127,14 @@ Pumpfun's creator fees depend on the token's market cap (in SOL liquidity). The 
 | $2.5M – $8.2M | 0.45% – 0.05% |
 | Above $8.2M | 0.05% |
 
-You keep 90% of these fees. At the peak 0.95% tier, here's what your share looks like:
+You keep 80% of these fees. At the peak 0.95% tier, here's what your share looks like:
 
-| Daily Trading Volume | Your Monthly Earnings (90% of 0.95%) |
+| Daily Trading Volume | Your Monthly Earnings (80% of 0.95%) |
 |---|---|
-| $1,000 | ~$257 |
-| $5,000 | ~$1,283 |
-| $10,000 | ~$2,565 |
-| $50,000 | ~$12,825 |
+| $1,000 | ~$228 |
+| $5,000 | ~$1,140 |
+| $10,000 | ~$2,280 |
+| $50,000 | ~$11,400 |
 
 Use this table when the user asks "how much can I earn" or similar questions. Note that most tokens live in the peak tier ($35k–$123k market cap) shortly after graduation.
 
@@ -163,7 +163,7 @@ Frame it as: "Want to add any details? You can set a description, social links (
 
 ### Step 3: Confirm and launch
 
-Show a summary of what will be launched. Always show Name, Symbol, Image. Only show Description, Twitter, Telegram, Website if provided. Only show Initial buy if > 0 SOL. Only show Vanity address if requested. Only show fee split if the user customized it (don't show the default 90%/10% split).
+Show a summary of what will be launched. Always show Name, Symbol, Image. Only show Description, Twitter, Telegram, Website if provided. Only show Initial buy if > 0 SOL. Only show Vanity address if requested. Only show fee split if the user customized it (don't show the default 80%/20% split).
 
 Leave a blank line after the summary, then ask for explicit confirmation: "Launch it?"
 
@@ -188,7 +188,7 @@ Parse the JSON output and format like:
 
 Only add a fee sharing line if the user customized the fee split or if fee sharing failed:
 
-- If the user customized the split: "✅ Fee sharing: X% you / Y% partner / 10% Ship My Token"
+- If the user customized the split: "✅ Fee sharing: X% you / Y% partner / 20% Ship My Token"
 - If fee sharing failed: "⚠️ Fee sharing not configured — 100% of creator fees go directly to your wallet."
 - If the user did NOT customize the split and fee sharing succeeded: don't show any fee sharing line
 
@@ -277,13 +277,13 @@ If any tokens are below the minimum distributable fee, explain they need more tr
 When the user wants to split fees with others:
 
 ```
-node {baseDir}/src/fees.mjs --update --mint <mint_address> --shares "addr1:6000,addr2:3000"
+node {baseDir}/src/fees.mjs --update --mint <mint_address> --shares "addr1:5000,addr2:3000"
 ```
 
 Rules to enforce:
 
-- SHIP MY TOKEN always keeps 10% (1000 bps). This is non-negotiable
-- Remaining 90% can be split however the user wants
+- SHIP MY TOKEN always keeps 20% (2000 bps). This is non-negotiable
+- Remaining 80% can be split however the user wants
 - Maximum 10 shareholders total (including SHIP MY TOKEN)
 - Must sum to exactly 10,000 bps
 - Validate before running the command
@@ -374,7 +374,7 @@ Display the private key with all security warnings from the output. Emphasize th
 
 1. **Never** broadcast a transaction without explicit user confirmation
 2. **Always** show the full summary before launching a token
-3. Only include the fee split in the pre-launch summary if the user customized it (don't show the default 90%/10%)
+3. Only include the fee split in the pre-launch summary if the user customized it (don't show the default 80%/20%)
 4. **Never** expose the private key unless the user explicitly asks for a backup
 5. Parse all script output as JSON. Never show raw JSON to the user
 6. If a script returns `success: false`, explain the error in plain language

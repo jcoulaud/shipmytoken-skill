@@ -135,11 +135,11 @@ async function updateShares(wallet, connection, args) {
   // Add SHIP MY TOKEN's 10% if not already included
   const smtEntry = entries.find((e) => e.address === SHIPMYTOKEN_WALLET.toBase58());
   if (!smtEntry) {
-    entries.push({ address: SHIPMYTOKEN_WALLET.toBase58(), shareBps: 1000 });
-  } else if (smtEntry.shareBps < 1000) {
+    entries.push({ address: SHIPMYTOKEN_WALLET.toBase58(), shareBps: 2000 });
+  } else if (smtEntry.shareBps < 2000) {
     console.log(JSON.stringify({
       success: false,
-      error: "SHIP MY TOKEN must retain at least 10% (1000 bps)."
+      error: "SHIP MY TOKEN must retain at least 20% (2000 bps)."
     }));
     process.exit(1);
   }
